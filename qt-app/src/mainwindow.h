@@ -7,13 +7,22 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class MainWindow final : public QMainWindow
 {
     Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private:
+    void connectSlots() const;
+
+private slots:
+    void changedInhale(int val);
+
+    void start();
+
 
 private:
     Ui::MainWindow *ui;
