@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>544</width>
+    <width>549</width>
     <height>575</height>
    </rect>
   </property>
@@ -204,8 +204,11 @@
           </item>
           <item row="1" column="1">
            <widget class="QSlider" name="m_preloadBelly_sr">
+            <property name="minimum">
+             <number>9</number>
+            </property>
             <property name="maximum">
-             <number>31</number>
+             <number>40</number>
             </property>
             <property name="pageStep">
              <number>1</number>
@@ -259,9 +262,12 @@
            <widget class="QLineEdit" name="m_preloadBelly_le">
             <property name="maximumSize">
              <size>
-              <width>30</width>
+              <width>40</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="text">
+             <string/>
             </property>
             <property name="readOnly">
              <bool>true</bool>
@@ -370,6 +376,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="m_pause_pb">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -380,10 +389,16 @@
           <property name="text">
            <string>Пауза</string>
           </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="m_stop_pb">
+         <widget class="QPushButton" name="m_reset_pb">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="font">
            <font>
             <pointsize>12</pointsize>
@@ -392,7 +407,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Стоп</string>
+           <string>Сброс</string>
           </property>
          </widget>
         </item>
@@ -514,7 +529,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>544</width>
+     <width>549</width>
      <height>21</height>
     </rect>
    </property>
@@ -608,7 +623,7 @@
   <tabstop>m_PDA_sb</tabstop>
   <tabstop>m_portionExhale_cb</tabstop>
   <tabstop>m_pause_pb</tabstop>
-  <tabstop>m_stop_pb</tabstop>
+  <tabstop>m_reset_pb</tabstop>
   <tabstop>m_start_pb</tabstop>
   <tabstop>m_inhale_sr</tabstop>
   <tabstop>m_preloadBelly_sr</tabstop>
