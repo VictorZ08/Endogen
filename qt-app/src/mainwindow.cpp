@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "../../journal/src/journalwidget.h"
+#include "../../journal/src/journalUI.h"
 #include <memory>
 
 #include <QTimer>
@@ -12,7 +12,7 @@ static bool flagDA = false;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
-    , m_ptrJournalWidget{std::make_unique<JournalWidget>()}
+    , m_ptrJournalUI{std::make_unique<JournalUI>()}
     , m_timerWorkout{new QTimer(this)}
     , m_timerInhale{new QTimer(this)}
     , m_timeWorkout{QTime::fromString("00:00:00", "hh:mm:ss")}
@@ -145,7 +145,7 @@ void MainWindow::updateTimerWorkout()
 
 void MainWindow::m_showJournal_menu()
 {
-    m_ptrJournalWidget->show();
+    m_ptrJournalUI->show();
     qDebug() << "m_showJournal_menu";
 }
 

@@ -631,7 +631,7 @@
   </action>
   <action name="m_journal_an">
    <property name="text">
-    <string>Дневник</string>
+    <string>Журнал</string>
    </property>
   </action>
  </widget>
