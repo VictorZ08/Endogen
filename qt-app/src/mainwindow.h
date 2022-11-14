@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTime>
 
-class JournalWidget;
+class JournalUI;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -36,7 +36,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui = nullptr;
-    std::unique_ptr<JournalWidget> m_ptrJournalWidget;
+    std::unique_ptr<JournalUI> m_ptrJournalUI;
 
     QTimer* m_timerWorkout = nullptr;
     QTimer* m_timerInhale = nullptr;
