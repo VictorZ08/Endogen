@@ -12,7 +12,7 @@
 JournalUI::JournalUI(QWidget *parent)
             : QWidget(parent)
             , ui{new Ui::JournalUI}
-            , m_ptrHistogramWidget{std::make_unique<HistogramUI>()}
+            , m_ptrHistogramUI{std::make_unique<HistogramUI>()}
             , m_model{ new TableModel(this) }
 {
     ui->setupUi(this);
@@ -50,7 +50,7 @@ void JournalUI::connectSlots()
 
 void JournalUI::m_hisogramShow()
 {
-    m_ptrHistogramWidget->show();
+    m_ptrHistogramUI->show();
 }
 
 void JournalUI::rotateIcon(const QModelIndex& index)

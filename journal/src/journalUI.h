@@ -31,7 +31,7 @@ private slots:
 
 private:
     Ui::JournalUI *ui = nullptr;
-    std::unique_ptr<HistogramUI> m_ptrHistogramWidget;
+    std::unique_ptr<HistogramUI> m_ptrHistogramUI;
 
     TableModel* m_model = nullptr;
 };

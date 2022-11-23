@@ -1,11 +1,13 @@
-#include "mainwindow.h"
+#include "../../users/src/authorizeusersUI.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    AuthorizeUsersUI u;
+    u.show();
+
+
     return a.exec();
 }
