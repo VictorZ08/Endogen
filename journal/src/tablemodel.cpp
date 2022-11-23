@@ -4,8 +4,8 @@
 #include "QFont"
 //#include "QBrush"
 #include "QIcon"
-#include "QDebug"
 #include "QStandardItem"
+#include "QDebug"
 
 QVariantList valCells;
 
@@ -26,6 +26,12 @@ TableModel::TableModel(QObject* parent)
                                     .arg(QDate::currentDate().month())
                                     .arg(QDate::currentDate().year());
     }
+    qDebug() << "TableModel";
+}
+
+TableModel::~TableModel()
+{
+        qDebug() << "~TableModel";
 }
 
 int TableModel::rowCount(const QModelIndex& /*parent*/) const

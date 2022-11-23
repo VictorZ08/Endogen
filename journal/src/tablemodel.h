@@ -9,6 +9,7 @@ class TableModel : public QAbstractTableModel
     Q_OBJECT
 public:
     explicit TableModel(QObject* parent = nullptr);
+    ~TableModel();
 
     void setRotateIcon(const int row);
     void copy(const QModelIndexList& inModelsIdx);

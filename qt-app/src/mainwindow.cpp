@@ -27,14 +27,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->m_preloadBelly_sr->valueChanged(ui->m_preloadBelly_sr->value());
     ui->m_durationLesson_sb->setValue(15);
 
-    QTime t1(5,40,32);
-    qDebug() << t1.toString();
-    //QTime t2(3,55,48);
-
-    t1 = t1.addSecs(-332);
-    qDebug() << t1.toString();
-//    int m = t1.hour() - t2.hour();
-//    int s = t1.hour() - t2.hour();
     qDebug() << "MainWindow";
 }
 

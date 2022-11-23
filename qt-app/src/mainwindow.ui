@@ -569,17 +569,17 @@
     <addaction name="m_breathingTips_an"/>
     <addaction name="m_aboutProgramm"/>
    </widget>
-   <widget class="QMenu" name="m_users_m">
+   <widget class="QMenu" name="m_AuthorizeUsersUI_m">
     <property name="title">
      <string>Пользователи</string>
     </property>
-    <addaction name="m_createUsers_an"/>
+    <addaction name="m_createAuthorizeUsersUI_an"/>
     <addaction name="m_change_an"/>
     <addaction name="m_removeUser_an"/>
     <addaction name="m_journal_an"/>
    </widget>
    <addaction name="m_menu_m"/>
-   <addaction name="m_users_m"/>
+   <addaction name="m_AuthorizeUsersUI_m"/>
    <addaction name="m_settings_m"/>
    <addaction name="m_help_m"/>
   </widget>
@@ -614,7 +614,7 @@
     <string>О программе</string>
    </property>
   </action>
-  <action name="m_createUsers_an">
+  <action name="m_createAuthorizeUsersUI_an">
    <property name="text">
     <string>Создать</string>
    </property>
